@@ -1,35 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link rel="icon" type="image/x-icon" href="/src/img/tank.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=VT323&display=swap"
+      rel="stylesheet"
+    />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Statki</title>
-    <link rel="stylesheet" href="style.css" />
+    <title>TANKS</title>
+    <link rel="stylesheet" href="/style.css" />
   </head>
   <body>
-    <a class="game">Gra w Statki</a>
-    <a class="points">PUNKTACJA:</a>
-    <a class="end"></a>
-    <div class="menu">
-      <a class="MenuTitle">Wybierz rozmiar planszy!</a>
-      <br />
-      <input class="radio" type="radio" name="plansza" id="" value="3" /><label
-        >3 x 3</label
-      >
-      <br />
-      <input class="radio" type="radio" name="plansza" id="" value="6" /><label
-        >6 x 6</label
-      >
-      <br />
-      <input class="radio" type="radio" name="plansza" id="" value="8" /><label
-        >8 x 8</label
-      >
-      <br />
-      <button class="btnStart">Start gry!</button>
+    <div id="menu">
+      <h2>Tanks</h2>
+      <p>Select game type</p>
+      <div id="buttons">
+        <button class="btn-menu">Easy</button>
+        <button class="btn-menu">Medium</button>
+      </div>
     </div>
-
-    <div class="grid_container"></div>
-
+    <div id="content" class="content">
+      <h2 class="disable-text"></h2>
+    </div>
+    <div class="end-game">
+      <h2>You win!</h2>
+      <p>Your score:</p>
+      <p id="result-points">0</p>
+      <button id="restart-btn">Restart game</button>
+    </div>
     <script src="script.js"></script>
   </body>
 </html>
