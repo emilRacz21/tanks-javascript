@@ -2,6 +2,8 @@
 
 This is a simple Battleship game implemented using HTML, CSS, and JavaScript. Players can choose between two difficulty levels: Easy and Medium. The objective is to click on cells in a grid to "hit" ships while earning points. Points are awarded for successful hits and deducted for misses.
 
+[Battleship Game](https://tanks-er.netlify.app/)
+
 ## Features
 
 - Two game difficulty levels: Easy and Medium
